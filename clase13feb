@@ -26,7 +26,7 @@ subplot(2,2,3);
 %imshow(h,[]);
 mesh(h)
 
-sum(sum(h))
+sum(sum(h)) %para integrar a = 1
 
 g=conv2(f,h,"same");
 
@@ -66,7 +66,7 @@ mesh(g)
 
 for (x=1:sz(1))
     for (y=1:sz(2))
-        f(y,x)=sin(y*0.07)*sin(x*0.05);
+        f(y,x)=sin(y*0.07)*sin(x*0.05);  % menor valor menor resolución
     end
 end
 subplot(2,2,1);
